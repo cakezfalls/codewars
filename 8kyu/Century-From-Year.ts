@@ -6,3 +6,7 @@
 
 //My Solution:
 
+export const centuryFromYear = (year: number): number => {
+    const newYear:number = (year / 100)
+    return Math.ceil(newYear);
+};
