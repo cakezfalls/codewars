@@ -9,3 +9,9 @@ export function simpleMultiplication(num: number): number{
       return num * 8;
     }
   }
+
+  // UPD:
+
+  export function simpleMultiplication(num: number): number{
+    return num % 2 ? num * 9 : num * 8;
+  }
