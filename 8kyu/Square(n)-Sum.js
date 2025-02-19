@@ -9,3 +9,10 @@ function squareSum(numbers){
     })
     return sum;
   }
+
+
+//   UPD: TS Solution:
+
+export function squareSum(numbers: number[]): number {
+   return numbers.map(i => Math.pow(i,2)).reduce ((acc, num) => acc += num, 0);
+}
