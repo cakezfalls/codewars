@@ -7,3 +7,12 @@
 
 // Output
 // Output will consist of a list of string values (in Haskell and C: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
+
+
+//My Solution:
+
+export function openOrSenior(data:number[][]):string[]{
+    return data.map(i => i[0] >= 55 && i[1] > 7 ?'Senior' : 'Open')
+   }
+     
+   
