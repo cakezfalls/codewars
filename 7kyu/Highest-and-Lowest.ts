@@ -11,3 +11,15 @@ export class Kata {
       return max.toString() + ' ' + min.toString()
     }
   }
+
+  //UPD:
+
+  export class Kata {
+    static highAndLow(numbers: string): string {
+    const num = numbers.split(' ').map(Number);
+    const max = Math.max(...num);
+    const min = Math.min(...num);
+      
+    return `${max} ${min}`  
+    }
+  }
