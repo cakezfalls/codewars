@@ -6,7 +6,7 @@
 
 export class Kata {
     static validatePin(pin: string): boolean {
-      const newArray = pin.split('').map(Number); 
-       return (newArray.every(i => !isNaN(i)) && (newArray.length === 4 || newArray.length === 6)) 
+      const newArray = pin.split(''); 
+       return (newArray.every(i => /^\d$/.test(i)) && (newArray.length === 4 || newArray.length === 6)) 
     }
   }
